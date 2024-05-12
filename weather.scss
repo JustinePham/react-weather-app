@@ -1,0 +1,103 @@
+.weather-container {
+  font-family: 'MuseoModerno', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: rgb(143, 143, 143);
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 1rem;
+
+  .title,
+  .area {
+    text-align: center;
+    font-weight: 400;
+    opacity: 50%;
+  }
+  .conditions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 400;
+    opacity: 50%;
+    //background-color: rgb(255, 255, 255, .5);
+    justify-content: center;
+    border-radius: 10px;
+  }
+  .weather-search {
+    display: flex;
+    justify-content: center;
+    input[type='text'] {
+      font-family: 'MuseoModerno', sans-serif;
+      box-sizing: border-box;
+      padding-left: 10px;
+      width: 50%;
+      opacity: 50%;
+      // border: 3px solid rgb(255, 255, 255, .5);
+      border: transparent;
+      background-color: rgb(255, 255, 255);
+      border-right: none;
+      // padding: 5px;
+      font-style: italic;
+      height: 36px;
+      border-radius: 20px 0 0 20px;
+      outline: none;
+      color: rgb(143, 143, 143);
+    }
+    input::placeholder {
+      padding: 10px;
+    }
+    .weather-search-btn {
+      opacity: 50%;
+      width: 40px;
+      height: 36px;
+      padding: 3px;
+      //border: 3px solid rgb(255, 255, 255,.5);
+      border: transparent;
+      border-left: none;
+      background: rgb(255, 255, 255);
+      text-align: center;
+      color: rgb(255, 255, 255);
+      border-radius: 0 20px 20px 0;
+      cursor: pointer;
+      .search-icon {
+        color: rgb(143, 143, 143);
+        &:hover {
+          color: rgb(143, 143, 143, 0.6);
+        }
+      }
+    }
+  }
+  h2 {
+    text-align: center;
+  }
+  .weather-container-info {
+    opacity: 60%;
+    //  display: grid;
+    width: 100%;
+    //  grid-template-columns: 45% 50%;
+    //  grid-template-rows: auto;
+    display: flex;
+    align-items: baseline;
+    //  grid-gap: 10px;
+    justify-content: space-around;
+    //padding: 10px 0;
+    background: rgb(255, 255, 255, 0.5);
+    border-radius: 10px;
+
+    .weather-container--sub {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      //width: 30%;
+      height: 75px;
+    }
+    .wind {
+      .direction {
+        font-size: 14px;
+      }
+    }
+  }
+}

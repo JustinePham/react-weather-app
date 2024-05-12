@@ -1,0 +1,29 @@
+body {
+  background: lightblue
+    url('https://www.bhmpics.com/downloads/pink-purple-sky-Wallpapers/1.10906198.jpg')
+    no-repeat fixed center;
+
+  font-family: 'MuseoModerno', sans-serif;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  opacity: 35%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+}
+li {
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  //opacity: 50%;
+}
+a {
+  text-decoration: none;
+  color: darkgrey;
+}
+a:hover {
+  color: darkcyan;
+}
